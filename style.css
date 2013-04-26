@@ -1,0 +1,671 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Capriola);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: #ff8754;
+}
+a:visited {
+  color: #ff8754;
+}
+a:hover {
+  color: #695d53;
+}
+
+a.keyword {
+  color: #695d53;
+}
+a.keyword:visited {
+  color: #695d53;
+}
+a.keyword:hover {
+  color: #8e7e70;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+blockquote {
+  padding: 1em 0;
+  overflow: hidden;
+  position: relative;
+}
+blockquote:before, blockquote:after {
+  position: absolute;
+  content: "■";
+  color: #ff8754;
+  font-size: 2em;
+}
+blockquote:before {
+  top: -0.85em;
+  left: -0.13em;
+}
+blockquote:after {
+  bottom: -0.55em;
+  right: -0.13em;
+}
+blockquote cite:before {
+  content: "…";
+  letter-spacing: 0.3em;
+}
+
+table {
+  background-color: #f8f8f8;
+  margin: 0 1em;
+}
+
+th, td {
+  border: 2px solid #695d53;
+  padding: 0.3em 0.5em;
+}
+
+th {
+  border-bottom: 2px solid #ff8754;
+  background-color: #ffb696;
+}
+
+ul, ol {
+  margin-left: 2em;
+  line-height: 2;
+}
+
+ul {
+  list-style: circle;
+}
+
+ol {
+  list-style: decimal;
+}
+
+dl {
+  margin-left: 1em;
+}
+
+dd {
+  margin-left: 1em;
+}
+
+pre {
+  -webkit-box-shadow: 0 0 21px -5px #ff8754;
+  -moz-box-shadow: 0 0 21px -5px #ff8754;
+  box-shadow: 0 0 21px -5px #ff8754;
+  white-space: pre;
+  word-wrap: normal;
+  overflow: hidden;
+}
+pre:hover {
+  overflow: auto;
+}
+
+body {
+  font-size: 14px;
+  line-height: 1.8;
+  background: url("http://img.f.hatena.ne.jp/images/fotolife/t/totora0155/20130226/20130226172005.png");
+  color: #695d53;
+  font-family: Verdana, Arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+.side_border, .comment-box, [class^="page-a"] .autopagerize_page_element li {
+  padding: 0.5em;
+  -webkit-border-radius: 5px 5px;
+  -moz-border-radius: 5px / 5px;
+  border-radius: 5px / 5px;
+  background: url("http://img.f.hatena.ne.jp/images/fotolife/t/totora0155/20130226/20130226171912.png");
+  border-left: 1px dashed #ff8754;
+}
+
+#globalheader-container {
+  display: block;
+  width: 100%;
+  border-bottom: 2px solid #d9d9d9;
+  background: url("http://img.f.hatena.ne.jp/images/fotolife/t/totora0155/20130226/20130226171912.png");
+}
+
+#blog-title, #main, #box2-inner {
+  width: 960px;
+  margin: 0 auto;
+}
+
+#blog-title-inner {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 1.5em 0;
+  line-height: 1.7;
+}
+
+#title a {
+  font-size: 5.5em;
+  letter-spacing: 0.1em;
+  color: #695d53;
+  padding: 0.21em;
+  -webkit-transition: color, 0s ease-in-out, 0.5s;
+  -moz-transition: color, 0s ease-in-out, 0.5s;
+  -o-transition: color, 0s ease-in-out, 0.5s;
+  transition: color, 0s ease-in-out, 0.5s;
+  font-family: "Capriola", sans-serif;
+}
+#title a:hover {
+  color: #ff8754;
+}
+
+.page-index #title a {
+  background: url("http://img.f.hatena.ne.jp/images/fotolife/t/totora0155/20130226/20130226171912.png");
+}
+
+#blog-description {
+  font-size: 1.3em;
+}
+
+.header-image-enable #blog-title #title a, .header-image-enable #blog-title #blog-description {
+  color: inherit;
+  text-shadow: 0 0 0;
+}
+
+.breadcrumb {
+  width: 960px;
+  margin: 0 auto;
+  padding-left: 5em;
+}
+
+#main {
+  padding-top: 2em;
+  border-top: 3px double #a3a3a3;
+  padding-top: 2em;
+  margin-bottom: 1.3em;
+  position: relative;
+}
+#main:before, #main:after {
+  content: "■";
+  position: absolute;
+  top: -1.1em;
+  font-size: 3em;
+  text-shadow: 0 1px 3px #a3a3a3;
+}
+#main:before {
+  left: -0.2em;
+}
+#main:after {
+  right: -0.2em;
+}
+
+#main-inner .hentry.entry {
+  display: block;
+  width: 100%;
+  padding: 2.5em 0;
+  margin: 0;
+}
+
+.hentry:not(:first-child) {
+  border-top: 1px dashed #a3a3a3;
+}
+
+.entry-inner, section.autopagerize_page_element {
+  display: block;
+  width: 61.53846%;
+  margin-left: 19.23077%;
+  margin-right: 19.23077%;
+}
+
+.entry-header {
+  position: relative;
+}
+
+.date {
+  position: absolute;
+  left: -7em;
+  top: -1em;
+  background: url("http://img.f.hatena.ne.jp/images/fotolife/t/totora0155/20130226/20130226171910.png") no-repeat;
+  width: 5em;
+  height: 5em;
+}
+.date [class^="date-"] {
+  color: #695d53;
+}
+.date [class^="date-"]:hover {
+  color: #8e7e70;
+}
+
+.entry-header-menu {
+  position: absolute;
+  height: 0;
+}
+.entry-header-menu a {
+  position: relative;
+  right: 6.2em;
+  top: 1.3em;
+  height: 2.1em;
+  line-height: 2.1em;
+  width: 3.1em;
+  display: block;
+  text-align: center;
+  background: url("http://img.f.hatena.ne.jp/images/fotolife/t/totora0155/20130226/20130226171912.png");
+  color: #695d53;
+}
+.entry-header-menu a:hover {
+  color: #8e7e70;
+}
+
+.hyphen {
+  display: none;
+}
+
+.date-year {
+  position: relative;
+  left: 0.8em;
+}
+
+.date-month {
+  font-size: 1.1em;
+  position: relative;
+  top: 1.3em;
+  right: 1.6em;
+}
+
+.date-day {
+  font-size: 1.5em;
+  position: relative;
+  top: 1.2em;
+  right: 1.2em;
+}
+
+.entry-title {
+  font-size: 1.8em;
+  line-height: 1.3;
+}
+
+.categories {
+  text-align: right;
+  line-height: 1;
+  font-size: 0.8em;
+}
+.categories:before {
+  content: "カテゴリー :";
+}
+.categories a {
+  margin: 0 0.5em;
+}
+
+.entry-content a, .entry-footer a {
+  text-decoration: underline;
+}
+
+img.hatena-fotolife, img.magnifiable {
+  max-width: 100%;
+  margin: 0 auto 1em;
+  width: auto;
+  display: block;
+  -webkit-border-radius: 3px 3px;
+  -moz-border-radius: 3px / 3px;
+  border-radius: 3px / 3px;
+  padding: 0.5em;
+  background: url("http://img.f.hatena.ne.jp/images/fotolife/t/totora0155/20130226/20130226171912.png");
+  border: 1px solid #ff8754;
+}
+
+img.hatena-image-left, img.hatena-image-right {
+  max-width: 31%;
+  display: inline;
+}
+
+a img.hatena-image-left {
+  float: left;
+  margin: 0 1em 0 0;
+}
+
+a img.hatena-image-right {
+  float: right;
+  margin: 0 0 0 1em;
+}
+
+.entry-content .hatena-asin-detail, blockquote, pre {
+  padding: 1em;
+  margin: 0 1em;
+  border: 1px solid #ff8754;
+  -webkit-border-radius: 5px 5px;
+  -moz-border-radius: 5px / 5px;
+  border-radius: 5px / 5px;
+  background: url("http://img.f.hatena.ne.jp/images/fotolife/t/totora0155/20130226/20130226171912.png");
+}
+
+.entry-content h1 {
+  font-size: 2.3em;
+  margin: 0.15em 0;
+}
+.entry-content h2 {
+  font-size: 2em;
+  margin: 0.2em 0;
+}
+.entry-content h3 {
+  font-size: 1.8em;
+  margin: 0.45em 0;
+}
+.entry-content h4 {
+  font-size: 1.4em;
+  margin: 0.5em 0;
+}
+.entry-content h5 {
+  font-size: 1.25em;
+  margin: 0.5em 0;
+}
+.entry-content h6 {
+  font-size: 1.2em;
+  margin: 0.5em 0;
+}
+
+.entry-content .hatena-asin-detail {
+  *zoom: 1;
+}
+.entry-content .hatena-asin-detail:before, .entry-content .hatena-asin-detail:after {
+  content: "";
+  display: table;
+}
+.entry-content .hatena-asin-detail:after {
+  clear: both;
+}
+.entry-content .hatena-asin-detail .hatena-asin-detail-info {
+  display: inline;
+  float: left;
+  width: 61.53846%;
+  padding-left: 1em;
+  border-left: 1px solid #a3a3a3;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.hatena-asin-detail > a {
+  display: inline;
+  float: left;
+  width: 30.76923%;
+  margin-right: 7.69231%;
+  display: block;
+  text-align: center;
+}
+
+.entry-content .hatena-asin-detail .hatena-asin-detail-image {
+  width: auto;
+  max-width: 100%;
+  margin: 0;
+  float: none;
+}
+
+.entry-footer-section {
+  text-align: right;
+  line-height: 2.5;
+}
+
+.hatena-star-container, .star-navigation-tooltip, #google_afc_user, .customized-footer, .comment-box {
+  position: relative;
+  bottom: 3.35em;
+}
+
+.comment {
+  list-style: none;
+  line-height: 1;
+  margin: 0 1em;
+}
+.comment .entry-comment {
+  padding: 0.5em 1em;
+  border-bottom: 1px solid #a3a3a3;
+}
+
+.comment-content {
+  margin-left: 1em;
+  line-height: 1.3;
+}
+
+.comment-box {
+  margin: 0 1em;
+}
+.comment-box .leave-comment-title {
+  margin-left: 1em;
+  text-decoration: none;
+  padding: 0.5em;
+}
+.comment-box .leave-comment-title:before {
+  content: "…";
+  color: #695d53;
+  letter-spacing: 0.3em;
+}
+
+.pager {
+  position: relative;
+  height: 2em;
+}
+
+.pager-next, .page-next {
+  padding: 0 0.5em;
+}
+
+.pager-prev {
+  position: absolute;
+  right: 0;
+}
+
+#box2 {
+  display: block;
+  width: 100%;
+  border-top: 2px solid #ff8754;
+  background-color: #3a3431;
+  padding-top: 2em;
+  color: #f8f8f8;
+  -webkit-box-shadow: 0 -1px 21px -5px #ff8754;
+  -moz-box-shadow: 0 -1px 21px -5px #ff8754;
+  box-shadow: 0 -1px 21px -5px #ff8754;
+}
+
+#box2-inner {
+  *zoom: 1;
+  color: #7a7674;
+}
+#box2-inner:before, #box2-inner:after {
+  content: "";
+  display: table;
+}
+#box2-inner:after {
+  clear: both;
+}
+#box2-inner a {
+  color: #7a7674;
+}
+#box2-inner a:hover {
+  color: #afacaa;
+}
+#box2-inner .hatena-module-recent-entries .hatena-module-title, #box2-inner a {
+  text-decoration: none;
+}
+
+.hatena-module:nth-child(n + 6) {
+  border-top: 1px dashed #6d6d6d;
+  padding-top: 1em;
+}
+
+.hatena-module {
+  display: inline;
+  float: left;
+  width: 20%;
+  min-height: 17em !important;
+  padding-top: 1em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 0.8em;
+  font-size: 0.89em;
+}
+.hatena-module ul {
+  margin-left: 1em;
+}
+.hatena-module [class^="hatena-module-"] a {
+  text-decoration: underline;
+}
+
+.hatena-module:not(:nth-child(5n + 5)) {
+  border-right: 1px dashed #6d6d6d;
+}
+
+.hatena-module:nth-child(6) {
+  clear: both;
+}
+
+.hatena-module-title {
+  font-size: 1.3em;
+}
+
+.hatena-module-body {
+  margin-left: 0.5em;
+}
+
+[class$="module-profile"] .id {
+  position: relative;
+  bottom: 2em;
+  padding-left: 0.5em;
+}
+
+[class$="module-search-box"] [type="text"] {
+  height: 1.3em;
+  line-height: 1.3em;
+  outline-color: #ff8754;
+  text-indent: 0.5em;
+  background-color: #5e544f;
+  border: none;
+}
+[class$="module-search-box"] [type="text"]:focus {
+  background-color: #e3e2e2;
+}
+[class$="module-search-box"] [type="submit"] {
+  height: 2.1em;
+  line-height: 2.1;
+  border: 1px solid #5e544f;
+  background-color: transparent;
+  -webkit-border-radius: 3px 3px;
+  -moz-border-radius: 3px / 3px;
+  border-radius: 3px / 3px;
+  margin-top: 0.5em;
+  color: #696562;
+  -webkit-transition: all, 0s, ease-in-out, 0.5s;
+  -moz-transition: all, 0s, ease-in-out, 0.5s;
+  -o-transition: all, 0s, ease-in-out, 0.5s;
+  transition: all, 0s, ease-in-out, 0.5s;
+}
+[class$="module-search-box"] [type="submit"]:hover {
+  background-color: #e3e2e2;
+}
+
+#footer {
+  text-align: center;
+  background-color: #3a3431;
+  color: assort;
+}
+
+#footer-inner {
+  *zoom: 1;
+  line-height: 1;
+}
+#footer-inner:before, #footer-inner:after {
+  content: "";
+  display: table;
+}
+#footer-inner:after {
+  clear: both;
+}
+#footer-inner a {
+  color: #7a7674;
+  text-decoration: underline;
+}
+#footer-inner a:hover {
+  color: #afacaa;
+}
+
+#top-box {
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.breadcrumb {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+}
+
+[class^="page-a"] p {
+  position: relative;
+  left: 6.3em;
+}
+[class^="page-a"] .autopagerize_page_element {
+  margin-top: 3em;
+}
+[class^="page-a"] .autopagerize_page_element li {
+  font-size: 1.2em;
+}
+[class^="page-a"] h1 {
+  font-size: 1.2em;
+}
+[class^="page-a"] ul {
+  list-style: none;
+}
+[class^="page-a"] .categories {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+[class^="page-a"] .entry-title {
+  font-size: 1em;
+}
